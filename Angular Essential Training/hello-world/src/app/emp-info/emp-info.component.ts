@@ -38,7 +38,7 @@ export class EmpInfoComponent implements OnInit {
     this.info3Rx = this.recordsService.getInfo3();
   }
 
-  updateInfo(frm: any) {
+  updateInfo(frm: { value: { location: string; }; }) {
     this.recordsService.addInfo(frm.value.location);
   }
 }

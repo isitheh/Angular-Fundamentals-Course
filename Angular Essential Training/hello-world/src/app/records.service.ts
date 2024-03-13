@@ -22,7 +22,7 @@ export class RecordsService {
     return this.info3;
   }
 
-  addInfo(info: any) {
+  addInfo(info: string) {
     this.info1.push(info);
     this.info2.push(info);
     this.info3.push(info);
